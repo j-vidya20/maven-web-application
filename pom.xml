@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://3.6.90.240:9980/sreevidya/repository/sreevidya-release/</url>
+	      <url>http://65.0.203.104:9980/sreevidya/repository/sreevidya-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.6.90.240:9980/sreevidya/repository/sreevidya-snapshot/</url>
+	      <url>http://65.0.203.104:9980/sreevidya/repository/sreevidya-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
