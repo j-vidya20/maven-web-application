@@ -6,6 +6,9 @@ pipeline{
 tools{
        maven "maven-3.6.2"
 }
+parameters {
+  choice choices: ['master', 'development', 'qa'], description: 'select brach name', name: 'BranchName'
+}
 triggers {
   pollSCM '* * * * *'
   //this is for build periodically option
