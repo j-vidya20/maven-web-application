@@ -23,7 +23,7 @@ stages{
     stage('CheckoutCode'){
        steps{
            slacknotification("STARTED")
-            git branch: 'development', credentialsId: '7aac4c71-c5c4-448c-b6cb-8b12fb121ed5', url: 'https://github.com/j-vidya20/maven-web-application.git' 
+            git branch: "${params.BranchName}", credentialsId: '7aac4c71-c5c4-448c-b6cb-8b12fb121ed5', url: 'https://github.com/j-vidya20/maven-web-application.git' 
     }//steps closing
 }
 //do the build
