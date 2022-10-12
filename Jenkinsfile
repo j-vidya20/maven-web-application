@@ -5,6 +5,7 @@ node
     properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
     
     try{  
+       slacknotification('STARTED')
  stage('CheckoutCode'){
 git branch: 'development', credentialsId: '7aac4c71-c5c4-448c-b6cb-8b12fb121ed5', url: 'https://github.com/j-vidya20/maven-web-application.git' 
 }
