@@ -6,6 +6,15 @@ pipeline{
 tools{
        maven "maven-3.6.2"
 }
+triggers {
+  pollSCM '* * * * *'
+  //this is for build periodically option
+   //cron '* * * * *'
+}
+options {
+  timestamps
+  buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')
+}
 stages{
 //get the code form github
     stage('CheckoutCode'){
