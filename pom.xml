@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://51.20.91.31:8081/repository/devopsproject-release/</url>
+	      <url>http://13.53.126.200:8081/repository/devopsproject-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://51.20.91.31:8081/repository/devopsproject_snapshot/</url>
+	      <url>http://13.53.126.200:8081/repository/devopsproject_snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
